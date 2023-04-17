@@ -21,6 +21,8 @@ app.use('/', routs)
 // deafult cors
 app.use(cors());
 
+require('./db/connect')
+
 // server
 app.listen(port, ()=>{
     console.log(`Server working on: localhost:${port}`)
